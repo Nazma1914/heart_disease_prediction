@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Heart Disease Prediction</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Heart Disease Prediction</h1>
+
+    <form
+        action="/predict"
+        method="POST"
+    >
+
+        <input
+            type="number"
+            name="age"
+            placeholder="Age"
+            required
+        >
+
+        <input
+            type="number"
+            name="sex"
+            placeholder="Sex (0 or 1)"
+            required
+        >
+
+        <input
+            type="number"
+            name="cp"
+            placeholder="Chest Pain Type"
+            required
+        >
+
+        <input
+            type="number"
+            name="trestbps"
+            placeholder="Resting Blood Pressure"
+            required
+        >
+
+        <input
+            type="number"
+            name="chol"
+            placeholder="Cholesterol"
+            required
+        >
+
+        <input
+            type="number"
+            name="fbs"
+            placeholder="Fasting Blood Sugar"
+            required
+        >
+
+        <input
+            type="number"
+            name="restecg"
+            placeholder="Rest ECG"
+            required
+        >
+
+        <input
+            type="number"
+            name="thalach"
+            placeholder="Maximum Heart Rate"
+            required
+        >
+
+        <input
+            type="number"
+            name="exang"
+            placeholder="Exercise Angina"
+            required
+        >
+
+        <input
+            type="number"
+            step="0.1"
+            name="oldpeak"
+            placeholder="Oldpeak"
+            required
+        >
+
+        <input
+            type="number"
+            name="slope"
+            placeholder="Slope"
+            required
+        >
+
+        <input
+            type="number"
+            name="ca"
+            placeholder="CA"
+            required
+        >
+
+        <input
+            type="number"
+            name="thal"
+            placeholder="Thal"
+            required
+        >
+
+        <button type="submit">
+            Predict
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
